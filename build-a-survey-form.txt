@@ -1,0 +1,116 @@
+** start of index.html **
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>freecodecamp Survey Form</title>
+      <link rel="stylesheet" href="styles.css">
+      </head>
+      <body>
+        <h1 id="title">freecodecamp Survey Form</h1>
+        <p id="description">Thank you for taking the time to help us improve the platform</p>
+        <form id="survey-form" action="http://register-demo.freecodecamp.org" method="post">
+        <fieldset>
+          <label id="name-label" for="name">Name<input id="name" type="text" placeholder="Enter your name" required ></label>
+          <label id="email-label" for="email">Email<input id="email" type="email" placeholder="Enter your email" required ></label>
+          <label id="number-label" for="number">Age(optional)<input type="number" id="number" placeholder="Age" max="120" min="10"></label>
+          <label>Which option best describes your current role?</label>
+         <select id="dropdown" name="dropdown">
+           <option value="a">Select current role</option>
+           <option value="b">Student</option>
+           <option value="c">Full Time Job</option>
+           <option value="d">Full Time Learner</option>
+           <option value="e">Prefer not to say</option>
+           <option value="f">Other</option>
+           </select>
+           </fieldset>
+           <fieldset> 
+          <legend>Would you recommend freeCodeCamp to a friend?</legend>
+          <label for="definitely"><input id="definitely" class="inline" type="radio" name="recommendation" value="definitely" checked >Definitely</label>
+          <label for="maybe"><input id="maybe" class="inline" type="radio" name="recommendation" value="maybe">Maybe</label>
+          <label for="notsure"><input id="notsure" class="inline" type="radio" name="recommendation" value="notsure">Notsure</label>
+          <label>What is your favorite feature of freeCodeCamp?</label>
+          <select id="favorite-color" name="color">
+            <option value="">Select an option</option>
+            <option value="1">Challenges</option>
+            <option value="2">Projects</option>
+            <option value="3">Community</option>
+            <option value="4">Open Source</option
+            </select>
+            </fieldset>
+            <fieldset> 
+              <legend>What would you like to see improved? (Check all that apply)</legend>
+           <label for="fep"><input id="fep" class="outline" type="checkbox" value="fep">Front-end Projects</label>
+             <label for="bep"><input id="bep" value="bep" class="outline" type="checkbox">Back-end Projects</label>
+  <label for="dv"><input id="dv" value="dv" class="outline" type="checkbox">Data Visualization</label>
+  <label for="ch"><input id="ch" value="ch" class="outline" type="checkbox">Challenges</label>
+  <label for="osc"><input id="osc" value="osc" class="outline" type="checkbox">Open Source Community
+</label>
+  <label for="ghr"><input id="ghr" value="ghr" class="outline" type="checkbox">Gitter help rooms</label>
+  <label for="v"><input id="v" value="v" class="outline" type="checkbox">Videos</label>
+  <label for="cm"><input id="cm" value="cm" class="outline" type="checkbox">City Meetups</label>
+  <label for="wi"><input id="wi" value="wi" class="outline" type="checkbox">Wiki</label>
+  <label for="fo"><input id="fo" value="fo" class="outline" type="checkbox">Forum</label>
+  <label for="ac"><input id="ac" value="ac" class="outline" type="checkbox">Additional Courses</label>
+
+  <label>Any comments or suggestions?<textarea placeholder="Enter your comments here..." rows="5" cols"60"></textarea></label>
+        </fieldset>
+    <button id="submit">Submit</button>
+      </body>
+</html>
+
+** end of index.html **
+
+** start of styles.css **
+
+body{
+  text-align:center;
+  font-size:20px;
+  font-family:Tahoma;
+  width:100%;
+  background-image:url();
+}
+h1,p{
+  text-align:center;
+  margin:1em auto;
+}
+p{
+  font-style:italic;
+}
+form{
+  width:600px;
+  margin:auto auto;
+  max-width:600px;
+  min-width:300px;
+  text-align:left;
+  background-color:#0a0a23;
+  color:white;
+  padding-bottom:2em;
+}
+input,select,textarea{
+  width:100%;
+  margin:10px 10px 0 0;
+  min-height:2em;
+}
+.inline,.outline{
+  width:unset;
+  margin:0 05em 0 0;
+  vertical-align:middle;
+}
+label{
+   display:block;
+   margin:0.5rem 0;
+}
+button{
+  width:100%;
+  min-height:3em; 
+  background-color:#00af5a;
+  margin:10px 10px 0 0;
+}
+fieldset{
+  padding:2rem 0;
+}
+
+** end of styles.css **
+
